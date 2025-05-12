@@ -25,7 +25,7 @@
         function parseEquation(equation) {
             // Remove spaces and extract coefficients
             equation = equation.replace(/\s+/g, '');
-            
+
             // Match coefficients and constant term
             const match = equation.match(/([-+]?\d*)x\s*([-+]?\d*)y\s*=\s*([-+]?\d+)/);
             if (!match) throw new Error("Invalid equation format!");
